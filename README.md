@@ -146,9 +146,3 @@ Update `CONTRACT_ADDRESS` in the frontend and run `npm start` in `frontend/`.
 - **Testnet:** App targets **Polygon Mumbai**. For production you’d deploy to mainnet (or Amoy) and update chain/RPC.  
 - **Contract address:** Frontend uses a single `CONTRACT_ADDRESS`; update it after redeploying.  
 - **MetaMask:** If another wallet (e.g. Temple) opens instead, disable it for this site or use a browser profile with only MetaMask.
-
----
-
-## License
-
-ISC
