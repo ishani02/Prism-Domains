@@ -33,7 +33,7 @@ contract Domains is ERC721URIStorage {
         _;
     }
 
-    constructor(string memory _tld) payable ERC721("Shine Name Service", "SNS") {
+    constructor(string memory _tld) payable ERC721("Prism Name Service", "PNS") {
         owner = payable(msg.sender);
         console.log("Welcome to shine name service");
         tld = _tld;

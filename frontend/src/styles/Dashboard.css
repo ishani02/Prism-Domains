@@ -1,0 +1,209 @@
+.dashboard-container {
+  min-height: 100vh;
+  padding-top: 72px;
+  background: linear-gradient(180deg, var(--color-bg) 0%, #1e293b 100%);
+  padding-bottom: 4rem;
+}
+
+.container-contents {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.dashboard-content {
+  background: var(--color-bg-elevated);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.input-area {
+  margin-bottom: 1rem;
+  background: transparent !important;
+}
+
+.input-area .form-control {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.875rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.input-area .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-area .form-control:focus {
+  border-color: var(--color-accent);
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+
+.input-area .input-group .btn {
+  background: var(--color-accent) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 0 12px 12px 0;
+  font-weight: 600;
+  padding: 0 1.25rem;
+}
+
+.input-area .input-group input {
+  border-radius: 12px 0 0 12px;
+}
+
+.button-container {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.button-container .btn,
+.dashboard-content .btn-primary,
+.dashboard-content .btn-secondary {
+  font-family: var(--font-body);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-content .btn-primary {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%) !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.dashboard-content .btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.3);
+}
+
+.dashboard-content .btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.dashboard-content .btn-secondary {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+
+.dashboard-content .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Recently minted */
+.recently-minted {
+  margin-top: 3rem;
+}
+
+.mint-container {
+  margin-top: 0;
+}
+
+.subtitle {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.25rem;
+}
+
+.mint-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.mint-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-bg-elevated);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  min-width: 180px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.mint-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.mint-item:nth-child(3n),
+.mint-item:nth-child(5n) {
+  /* Remove alternating bright colors for professional look */
+  background: var(--color-bg-elevated);
+}
+
+.mint-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-accent-hover);
+}
+
+.underlined {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin: 0;
+}
+
+.record {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.edit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.edit-button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.edit-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.9;
+}

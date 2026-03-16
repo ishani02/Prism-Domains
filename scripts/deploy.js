@@ -4,7 +4,7 @@ const main = async() => {
     const accounts = await hre.ethers.getSigners();
     const owner = accounts[0];
     const getDomains = await hre.ethers.getContractFactory("Domains");
-    const domains = await getDomains.deploy("shine");
+    const domains = await getDomains.deploy("prism");
     console.log("contract address", domains.address);
 
     //await domains.connect(accounts[1]).register("ishani",{value: 1000000000000000});

@@ -1,0 +1,151 @@
+/* Hero */
+.destination-1 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, var(--color-bg) 0%, #1e293b 50%, #0f172a 100%);
+  padding-top: 72px;
+}
+
+.component-1 {
+  text-align: center;
+  max-width: 720px;
+  padding: 2rem 1.5rem;
+}
+
+.home-heading-text {
+  font-family: var(--font-heading);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.wallet-connect-btn .connect-btn {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wallet-connect-btn .connect-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.35);
+}
+
+.wallet-connect-btn .connect-btn:disabled,
+.wallet-connect-btn .connect-btn.connected {
+  background: var(--color-success);
+  cursor: default;
+}
+
+/* About */
+.destination-2 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface);
+  padding: 6rem 1.5rem;
+}
+
+.component-2 {
+  max-width: 720px;
+}
+
+.about-us-heading-text {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.about-us-content {
+  margin-top: 1rem;
+}
+
+.about-us-para {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* Steps */
+.destination-3 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-soft);
+  padding: 6rem 1.5rem;
+}
+
+.component-3 {
+  max-width: 960px;
+}
+
+.steps-heading h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.steps-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.step-1 {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.step-1:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.step-1-heading h2 {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.step-1-heading h2 i {
+  color: var(--color-accent);
+}
+
+.step-1-content p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin: 0;
+}
